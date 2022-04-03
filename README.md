@@ -6,9 +6,7 @@ As configurações abaixo, assim como o próprio script de instalação, foram e
 
 **OBS.: Nenhum dos scripts neste repositório estão assegurados de que funcionarão 100%, tenha isso em mente**.
 
-**1.0** - Pré-instalação
-
-**1.1** - Verificação de conexão e relógio
+## **1** - Verificação de conexão e relógio
     
 Conexão com a internet
 
@@ -19,7 +17,9 @@ Relógio em UTC
     # timedatectl set-ntp true
     # timedatectl status
 
-**1.2** - Particionamento e formatação. O espaço que eu reservei para o meu Arch Linux no meu computador foi de 200 GB, e eu resolvi dividir este espaço nos seguintes termos.
+## **2** - Particionamento e formatação
+
+O espaço que eu reservei para o meu Arch Linux no meu computador foi de 200 GB, e eu resolvi dividir este espaço nos seguintes termos.
 
     # cfdisk
 
@@ -35,11 +35,11 @@ Relógio em UTC
     # mkdir /mnt/home
     # mount /dev/sda5 /mnt/home
 
-**1.3** - Atualização dos repositórios e instalação do GIT e do editor Nano
+## **3** - Atualização dos repositórios, instalação do GIT e do editor Nano
 
     # pacman -Sy git nano
 
-**1.4** - Clonagem do repositório
+## **4** - Clonagem do repositório
 
     # cd /tmp
     # git clone https://github.com/henriquepicanco/alis.git
@@ -48,13 +48,9 @@ Relógio em UTC
 
 O script de instalação será aberto no editor NANO, pois é preciso fazer algumas edições. Por padrão, há alguns *placeholders*, logo no início do arquivo ***alis.sh***, que lhe indicarão qual informação é necessária naquele comando. A lista é a seguinte:
 
-**HOSTN=NOME**
+*HOSTN=NOME*
 
 Este *placeholder* indica o nome que seu computador exibirá para outros computadores conectados na mesma rede. Troque **NOME** por um nome único para o seu computador na rede doméstica. Você pode usar letras maiúsculas e minúsculas. Evite espaços e recomendo não usar caracteres especiais, exceto o hífem.
-
-**LOCALE=America/Sao_Paulo**
-
-Este *placeholder* indica o seu fuso horário. Troque-o pelo seu fuso horário. Se você mora nas regiões dentro do horário de brasília e que tem horário de verão, não é preciso mudar esta linha. Do contrário, busque por uma lista de fuso horários disponíveis para a sua região.
 
 **ROOT_PASSWD=SENHA**
 
@@ -68,11 +64,15 @@ Este é o seu usuário pessoal, para o uso diário e que terá permissões para 
 
 Esta é uma senha específica para o seu usuário pessoal. Troque **SENHA** por uma senha única, **diferente da senha usada para o ROOT**, por questões de segurança.
 
+**LOCALE=America/Sao_Paulo**
+
+Este *placeholder* indica o seu fuso horário. Troque-o pelo seu fuso horário. Se você mora nas regiões dentro do horário de brasília e que tem horário de verão, não é preciso mudar esta linha. Do contrário, busque por uma lista de fuso horários disponíveis para a sua região.
+
 **KEYBOARD_LAYOUT=us-acentos**
 
 Esta é a linha que especifica o layout do meu teclado para o sistema instalado. Substitua o "us-acentos" pelo layout do seu teclado.
 
-**2.0** - Tornando executável - e executando
+## **5** - Executando o alis.sh
 
 Salve o arquivo e saia. Agora, torne-o executável e execute-o:
 
