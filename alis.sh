@@ -22,7 +22,7 @@ USER_PASSWD=SENHA
 ESSENTIAL_PKGS='wireless_tools wpa_supplicant dialog networkmanager acpi acpid xorg-xinit xorg-server xf86-video-nouveau mesa-demos nvidia nvidia-settings nvidia-utils neofetch git p7zip unrar unzip alsa-utils alsa-plugins alsa-lib bluez bluez-tools bluez-utils nano sudo'
 
 # Pacotes do GNOME
-EXTRA_GNOME='gdm gnome-tweaks gnome-control-center gnome-keyring xdg-user-dirs-gtk gnome-terminal mousetweaks gnome-backgrounds file-roller nautilus gnome-system-monitor gnome-maps cheese gnome-clocks simple-scan gnome-software gnome-software-packagekit-plugin gnome-font-viewer baobab evince gnome-characters gnome-screenshot gnome-photos totem gnome-calculator gnome-calendar gnome-weather gedit eog vivaldi vivaldi-ffmpeg-codecs gimp inkscape keepassxc'
+EXTRA_GNOME='gdm gnome-tweaks gnome-control-center gnome-keyring xdg-user-dirs-gtk gnome-terminal mousetweaks gnome-backgrounds file-roller nautilus gnome-system-monitor gnome-maps cheese gnome-clocks simple-scan gnome-software gnome-software-packagekit-plugin gnome-font-viewer baobab evince gnome-characters gnome-screenshot gnome-photos totem gnome-calculator gnome-calendar gnome-weather gedit eog vivaldi vivaldi-ffmpeg-codecs gimp gimp-help-pt_br inkscape keepassxc'
 
 ######## Variáveis menos suscetíveis a mudanças
 KEYBOARD_LAYOUT=us-acentos
