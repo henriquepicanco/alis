@@ -24,9 +24,6 @@ ESSENTIAL_PKGS='wireless_tools wpa_supplicant dialog networkmanager acpi acpid x
 # Pacotes do GNOME
 EXTRA_GNOME='gdm gnome-tweaks gnome-control-center gnome-keyring xdg-user-dirs-gtk gnome-terminal mousetweaks gnome-backgrounds file-roller nautilus gnome-system-monitor gnome-maps cheese gnome-clocks simple-scan gnome-software gnome-software-packagekit-plugin gnome-font-viewer baobab evince gnome-characters gnome-screenshot gnome-photos totem gnome-calculator gnome-calendar gnome-weather gedit eog vivaldi vivaldi-ffmpeg-codecs gimp inkscape keepassxc'
 
-# Pacotes do KDE
-EXTRA_KDE='vivaldi vivaldi-ffmpeg-codecs bluedevil breeze breeze-gtk xdg-user-dirs drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit knetattach kscreen kscreenlocker ksshaskpass ksysguard kwallet-pam kwayland-integration kwin kwrited libkscreen libksysguard milou oxygen plasma-browser-integration plasma-desktop plasma-integration plasma-nm plasma-pa plasma-sdk plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings user-manager xdg-desktop-portal-kde konsole dolphin gimp inkscape keepassxc'
-
 ######## Variáveis menos suscetíveis a mudanças
 KEYBOARD_LAYOUT=us-acentos
 LANGUAGE=pt_BR
@@ -93,7 +90,7 @@ ln -s /usr/share/zoneinfo/$LOCALE /etc/localtime
 echo $LOCALE > /etc/timezone
 hwclock --systohc --utc
 
-pacman -S `echo $ESSENTIAL_PKGS $EXTRA_AMBIENTE` --noconfirm
+pacman -S `echo $ESSENTIAL_PKGS $EXTRA_GNOME` --noconfirm
 
 systemctl enable NetworkManager.service
 systemctl enable acpid.service
